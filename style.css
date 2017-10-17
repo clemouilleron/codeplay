@@ -1,40 +1,60 @@
 body{
   background-color: black;
-
 }
 
-h1{
+
+.topnav{
+  margin-bottom: 5%;
+}
+
+
+.title{
+  margin-bottom: 5%;
+}
+
+.title p{
   color:white;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
   font-size: 35px;
   text-align: center;
-  padding-bottom: 30px;
 }
 
-.playlist{
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.top{
-  padding: 0 350px 0 350px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
 
 .numero{
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   color:white;
   color:white;
   font-family: 'Poiret One', cursive;
-  padding: 5px;
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img:hover{
   opacity:0.5;
 }
+
+/*début effet balle*/
+.ball {
+  pointer-events: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 80%;
+  background: gray;
+  animation: implode 2s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .4;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
+/*fin effet balle*/
