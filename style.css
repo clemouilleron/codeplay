@@ -2,6 +2,10 @@ body{
   background-color: black;
 }
 
+article{
+  color: white;
+  font-weight: bold;
+}
 
 .topnav{
   margin-bottom: 5%;
