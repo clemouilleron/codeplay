@@ -41,9 +41,11 @@ article{
   justify-content: center;
 }
 
-img:hover{
+/*jeudi*/
+.vote img:hover{
   opacity:0.5;
 }
+/*fin jeudi*/
 
 /*début effet balle*/
 .ball {
@@ -53,7 +55,7 @@ img:hover{
   height: 20px;
   border-radius: 80%;
   background: gray;
-  animation: implode 2s ease-in-out;
+  animation: implode 2s  ease-in-out;
   animation-fill-mode: both;
   opacity: .4;
 }
@@ -62,3 +64,18 @@ img:hover{
   100% {transform: scale(0)}
 }
 /*fin effet balle*/
+
+
+/* fait jeudi*/
+.fight{
+  position: fixed;
+  top:10%;
+  bottom:25%;
+  right:25%;
+  left:25%;
+  z-index: 1;
+}
+
+#musiques{
+  z-index: 0;
+}
