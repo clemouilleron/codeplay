@@ -1,53 +1,224 @@
+@font-face{
+font-family: 'Montserrat', sans-serif;
+src: url('font/montserrat.ttf');
+}
+
+
 body{
-  background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    position: relative;
 }
 
-article{
-  color: white;
-  font-weight: bold;
+
+a{
+    text-decoration: none !important;
 }
 
-.topnav{
-  margin-bottom: 5%;
+
+.vote img:hover{
+  opacity:0.5;
+}
+
+
+/* HOME PAGE */
+
+/* Menu */
+
+
+#myhome{
+    background-image: url(images/musicien.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.logo{
+    color: white;
+    font-size: 25px;
+}
+
+
+.logo:hover{
+    color: #fd5255;
+}
+
+
+.navbar{
+    background-color: rgba(00, 00, 00, 0.5);
+}
+
+
+.menu{
+    margin-top: 25px;
+    font-family: "Montserrat";
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 40px;
+}
+
+
+.barremenu{
+    padding: 10px 10px 10px 10px;
+    transition: 1s;
+    border: solid 1px transparent;
+    text-transform: uppercase;
+}
+
+
+.barremenu:hover{
+    color: #fd5255;
+}
+
+
+a:hover, a:focus, a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/* Texte */
+
+
+.texte1{
+    font-size: 80px;
+    margin-top: 210px;
+    text-align: center;
+    color: white;
+}
+
+
+.texte2{
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+
+/* CTA */
+
+
+.bouton{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.cta{
+    padding: 15px 90px 15px 90px;
+    border: solid 1px white;
+    color: white;
+    text-transform: uppercase;
+    transition: 1s;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.cta:hover{
+    color: white;
+    background-color: #fd5255;
+    border: solid 1px #fd5255;
+}
+
+
+
+/* Footer */
+
+
+.footer{
+    background-color: rgba(00, 00, 00, 0.1);
+    text-decoration: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.copyright{
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+
+
+/* PAGE TOP */
+
+
+#top{
+    background-color: #fd5255; 
+}
+
+
+#musiques{
+    margin-bottom: 50px;
 }
 
 
 .title{
-  margin-bottom: 5%;
+    margin-top: 135px;
+    margin-bottom: 30px;
 }
 
+
 .title p{
-  color:white;
-  font-family: 'Open Sans Condensed', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 35px;
-  text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
 }
 
 
 .numero{
-  font-size: 60px;
-  font-weight: bold;
-  color:white;
-  color:white;
-  font-family: 'Poiret One', cursive;
-  text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.row{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.plus:hover{
+    opacity: 0.5;
 }
 
-/*jeudi*/
-.vote img:hover{
-  opacity:0.5;
-}
-/*fin jeudi*/
 
-/*début effet balle*/
+.labelvote{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 50px;
+}
+
+
+
+/* PAGE ALL */
+
+
+#all{
+    background-color: #e5e5e5;
+}
+
+
+
+/* Effet curseur*/
+
+
 .ball {
   pointer-events: none;
   position: absolute;
@@ -60,17 +231,18 @@ article{
   opacity: .4;
 }
 
+
 @keyframes implode {
   100% {transform: scale(0)}
 }
-/*fin effet balle*/
 
 
-/* fait jeudi*/
+
+/* L'animation du like */
+
 .fight{
-  position: fixed;
-  top:10%;
-  bottom:25%;
+  position: absolute;
+  bottom:30%;
   right:25%;
   left:25%;
   z-index: 1;
@@ -78,4 +250,72 @@ article{
 
 #musiques{
   z-index: 0;
+}
+
+
+
+/* Responsive */ 
+
+
+@media screen and (max-width: 1000px){
+    
+    
+    /* HOME PAGE */
+    
+    
+    .logo{
+        text-align: center;
+    }
+    
+    
+    .texte1{
+        font-size: 60px; 
+    }
+    
+    
+    .texte2{
+        font-size: 25px;
+        margin-left: 50px;
+        margin-right: 50px;  
+    }
+    
+    
+    .cta{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        
+    }
+    
+    
+    
+    /* PAGE TOP & ALL */
+    
+    
+    .title{
+        margin-top: 200px;
+        margin-bottom: 30px; 
+    }
+    
+    
+    .spotify{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    
+    .plus{
+        margin-bottom: 50px;
+    }
+
+    
+    .fight{
+        position: absolute;
+        width: 100px;
+        bottom:60%;
+        right:25%;
+        z-index: 1;
+}
 }
